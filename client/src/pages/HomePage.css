@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: linear-gradient(to bottom, rgba(0, 0, 50, 0.9), rgba(255, 255, 255, 0.2));
+}
+
+h1 {
+    font-size: 3rem;
+    color: black;
+}
+
+.page-text{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+
+.page-button {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    top: 400px;
+    left: 650px;
+
+}
+  
+button {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    padding: 10px 20px;
+}
+
+.login-button {
+    margin-right: 30px;
+}
+  
+p{
+    font-size: 18px;
+    margin-top: 5px;
+}

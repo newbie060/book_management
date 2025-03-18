@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "axois": "^0.0.1-security",
     "bcryptjs": "^3.0.2",
     "cors": "^2.8.5",
     "dotenv": "^16.4.7",
