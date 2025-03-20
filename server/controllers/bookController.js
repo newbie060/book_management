@@ -3,14 +3,14 @@ const Book = require("../models/Book");
 // create a book (only for admin and author)
 exports.uploadBook = async (req, res) => {
     try{
-        const { title, description, author, pdfUrl, no_of_pages } = req.body;
+        const { title, description, author, semester, pdfUrl } = req.body;
 
         const book = await Book.create({
             title,
             description,
             author,
+            semester,
             pdfUrl,
-            no_of_pages,
             createdBy: req.user.userId,
         });
 

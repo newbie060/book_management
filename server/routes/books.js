@@ -11,7 +11,7 @@ const checkRole = require("../middleware/roleCheck");
 
 // Admin routes
 router.post("/", auth, checkRole("admin, author"), uploadBook);
-router.put("/:bookId", auth,checkRole("admin"), updateBook)
+router.put("/:bookId", auth, checkRole("admin"), updateBook);
 router.get("/all", auth, checkRole("admin, user, author"), getAllBooks);
 router.delete("/:bookId", auth, checkRole("admin"), deleteBook);
 

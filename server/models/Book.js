@@ -14,6 +14,12 @@ const bookSchema = new mongoose.Schema(
             trim: true,
         },
 
+        semester: {
+            type: Number,
+            required: true,
+            trim: true,
+        },
+
         author: {
             type: String,
             required: true,
@@ -25,12 +31,6 @@ const bookSchema = new mongoose.Schema(
             required: true,
             match: [/^https?:\/\/[^\s]+\.pdf$/, 'Please provide a valid PDF URL']
         }, 
-
-        no_of_pages: {
-            type: Number,
-            required: true,
-            trim: true,
-        },
 
         createdBy: {
             type: mongoose.Schema.Types.ObjectId, 
